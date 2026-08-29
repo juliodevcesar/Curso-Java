@@ -21,6 +21,5 @@ public class TipoTexto {
 		
 		System.out.println("Olá " + nome + " " + sobrenome + "!" + "Você tem " + idade + " anos!");
 		
-		Character variavelChar = 'A';
 	}
 }
