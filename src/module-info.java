@@ -4,5 +4,5 @@
 /**
  * 
  */
-module CursoLogicaCapitulo02 {
+module CursoJava {
 }
