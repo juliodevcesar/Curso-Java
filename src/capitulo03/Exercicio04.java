@@ -26,7 +26,7 @@ public class Exercicio04 {
 		
 		Double valorTotalDesconto = subtotalProdutos - desconto;
 		
-		System.out.println("Valor total: " + valorTotalDesconto);
+		System.out.printf("Valor total: R$ %.2f%n", valorTotalDesconto);
 		
 		scanner.close();
 		
