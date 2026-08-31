@@ -29,9 +29,6 @@ public class OperadoresAritimeticos {
 		Integer precedencia04 = 5 * (1 + 1) + 2; // primeiro a multiplicacao
 		System.out.println("Precedência 04: " + precedencia04);
 		
-		Integer precedencia05 = 5 * ((1 +1 ) + 2); // primeiro a multiplicacao
-		System.out.println("Precedência 05: " + precedencia05);
-		
 		Integer cinco = 5;
 		Integer um = 1;
 		

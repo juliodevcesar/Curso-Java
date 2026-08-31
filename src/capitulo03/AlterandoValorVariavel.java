@@ -5,28 +5,32 @@ import java.util.Scanner;
 public class AlterandoValorVariavel {
 
 	public static void main(String[] args) {
+	
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Digite o valor do produto: ");
-		Double valorProduto = scanner.nextDouble(); // decimal tipo float do python
+		System.out.println("Digite o valor do produto: ");
+		Double valorProduto = scanner.nextDouble();
 		
-		System.out.println("Digite o tipo do pagamento [1 = à vista / 2 = prazo]: ");
-		Integer tipoPagamento = scanner.nextInt(); // inteiro
+		System.out.println("Digite a forma de pagamento: [1 - À vista ou 2 - À prazo]");
+		Integer tipoPagamento = scanner.nextInt();
 		
-		Boolean pagamentoAVista = tipoPagamento.equals(1); // tipo pagamento igual a 1, equals 1.
+		Boolean pagamentoAVista  = tipoPagamento.equals(1);
 		
-		Double juros = 0.0; // criou mais uma variavel double, decimal. Sem juros.
+		Double juros = 0.0;
 		
-		if (!pagamentoAVista) { // estrutura de decisão se // !pagamentoAVista é uma opção. 
+		if (!pagamentoAVista) {
 			juros = 10.0;
-		} 
+		}
 		
-		Double acrescimo = valorProduto * juros / 100; // regra de 3
+		Double acrescimo = valorProduto * juros / 100;
 		
 		Double valorTotal = acrescimo + valorProduto;
 		
-		System.out.println("Valor Total: " + valorTotal);
+		System.out.println("O valor toral é: " + valorTotal);
+
 		
-		scanner.close();
-	}
+	scanner.close();
+		
+		
+	}	
 }
