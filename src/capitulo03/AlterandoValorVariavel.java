@@ -3,18 +3,16 @@ package capitulo03;
 import java.util.Scanner;
 
 public class AlterandoValorVariavel {
-
 	public static void main(String[] args) {
-	
 		Scanner scanner = new Scanner(System.in);
-		
+
 		System.out.println("Digite o valor do produto: ");
 		Double valorProduto = scanner.nextDouble();
 		
-		System.out.println("Digite a forma de pagamento: [1 - À vista ou 2 - À prazo]");
-		Integer tipoPagamento = scanner.nextInt();
+		System.out.println("Escolha a forma de pagamento: [1 - À vista | 2 - À prazo]");
+		Integer formaPagamento = scanner.nextInt();
 		
-		Boolean pagamentoAVista  = tipoPagamento.equals(1);
+		Boolean pagamentoAVista = formaPagamento.equals(1);
 		
 		Double juros = 0.0;
 		
@@ -26,11 +24,9 @@ public class AlterandoValorVariavel {
 		
 		Double valorTotal = acrescimo + valorProduto;
 		
-		System.out.println("O valor toral é: " + valorTotal);
-
+		System.out.println("O valor total é: " + valorTotal);
 		
 	scanner.close();
-		
 		
 	}	
 }
