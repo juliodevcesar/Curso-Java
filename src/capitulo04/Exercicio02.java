@@ -9,18 +9,19 @@ public class Exercicio02 {
 		System.out.println("Valor do produto: ");
 		Double valorProduto = scanner.nextDouble();
 		
-		Double valorFrete = 15.0;
+		Boolean precisaCobrarFrete = valorProduto < 100;
 		
-		Boolean compraAcimaDeCem = valorProduto >= 100;
+		Double valorFinal = valorProduto;
 		
-		if (compraAcimaDeCem) {
-			valorFrete = 0.0;
+		if (precisaCobrarFrete) {
+			valorFinal += 15.0;
 		}
 		
-		Double valorTotal = valorProduto + valorFrete;
-		System.out.println("O valor total foi de: " + valorTotal);
+		System.out.println("Valor final: " + valorFinal);
 		
-		scanner.close();	
 		
+		scanner.close();
+
 	}
+
 }
