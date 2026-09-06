@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercicio04 {
 
-	static final Integer IDADE_MINMA_PARA_APOSENTAR = 55;
+	static final Integer IDADE_MINIMA_PARA_APOSENTAR = 55;
 	
 	static final Integer TEMPO_MINIMO_DECONTRIBUICAO = 25;
 
@@ -17,7 +17,7 @@ public class Exercicio04 {
 		System.out.println("Digite o anos de contribuição: ");
 		Integer anosContribuicao = scanner.nextInt();
 		
-		Boolean temIdadeParaAposentar = idade >= IDADE_MINMA_PARA_APOSENTAR;
+		Boolean temIdadeParaAposentar = idade >= IDADE_MINIMA_PARA_APOSENTAR;
 		
 		Boolean temTempoDeContribuicaoSuficiente = anosContribuicao >= TEMPO_MINIMO_DECONTRIBUICAO;
 		
