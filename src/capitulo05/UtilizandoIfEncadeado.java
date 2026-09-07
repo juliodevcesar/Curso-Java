@@ -33,7 +33,7 @@ public class UtilizandoIfEncadeado {
 //	}
 	
 		Boolean pesoLeve = (peso <= 60) && (peso > 0);
-		Boolean pesoMedio = (peso > 60) && (peso <= 90);0
+		Boolean pesoMedio = (peso > 60) && (peso <= 90);
 		Boolean pesoPesado = peso > 90;
 		
 		if (pesoLeve) {
