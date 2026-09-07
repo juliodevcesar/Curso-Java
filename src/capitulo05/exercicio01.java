@@ -31,6 +31,8 @@ public class exercicio01 {
 		} else {
 			System.out.println("Você foi reprovado!");
 		}
+		
+		scanner.close();
 	}
 
 }
