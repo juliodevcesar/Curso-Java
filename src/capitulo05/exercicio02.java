@@ -15,18 +15,18 @@ public class exercicio02 {
 		System.out.println("Digite sua média salarial dos últimos 12 meses: ");
 		Double mediaSalarial = scanner.nextDouble();
 		
-		Double oitentaPorCentoDaMeta = (meta * 80) / 100;
+		Double setentaPorCentoDaMeta = (meta * 70) / 100;
 		
 		Boolean metaBatida = faturamento >= meta;
 		
-		Boolean bateuOitentaPorCento = faturamento >= oitentaPorCentoDaMeta;
+		Boolean bateuSetentaPorCento = faturamento >= setentaPorCentoDaMeta;
 		
 		if (metaBatida) {
 			System.out.println("Parabéns você bateu a meta e vai receber 100% de bônus! O valor será: " + mediaSalarial);
-		} else if (bateuOitentaPorCento) {
-			Double receberOitentaPorCento = (mediaSalarial * 80) / 100;
+		} else if (bateuSetentaPorCento) {
+			Double faturouSetentaPorCento = (mediaSalarial * 7100) / 100;
 			
-			System.out.println("Parabéns, seu bônus será de 80%. O valor será: " + receberOitentaPorCento);
+			System.out.println("Parabéns, seu bônus será de 70%. O valor será: " + faturouSetentaPorCento);
 		} else {
 			System.out.println("Infelzimente a meta não foi batida, você não receberá bônus.");
 		}
