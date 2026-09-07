@@ -4,35 +4,31 @@ import java.util.Scanner;
 
 public class exercicio02 {
 	public static void main(String[] args) {
-		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Meta de faturamento anual: ");
-		Double metaFaturamento = scanner.nextDouble();
+		System.out.println("Digite a meta de faturamento da empresa: ");
+		Double meta = scanner.nextDouble();
 		
-		System.out.println("Faturamento anual: ");
-		Double faturamentoApurado = scanner.nextDouble();
+		System.out.println("Digite o faturamento anual da empresa: ");
+		Double faturamento = scanner.nextDouble();
 		
-		System.out.println("Média salarial do funcionário nos últimos 12 meses: ");
+		System.out.println("Digite sua média salarial dos últimos 12 meses: ");
 		Double mediaSalarial = scanner.nextDouble();
 		
-		Double oitentaPorCentoDaMeta = (metaFaturamento * 80) / 100;
+		Double oitentaPorCentoDaMeta = (meta * 80) / 100;
 		
-		Boolean metaBatida = faturamentoApurado >= metaFaturamento;
+		Boolean metaBatida = faturamento >= meta;
 		
-		Boolean faturouOitentaPorCento = faturamentoApurado >= oitentaPorCentoDaMeta;
+		Boolean bateuOitentaPorCento = faturamento >= oitentaPorCentoDaMeta;
 		
 		if (metaBatida) {
-			System.out.println("Ganhará um bônus de 100%! Ele será de: " + mediaSalarial);		
-		} else if (faturouOitentaPorCento) {
-			Double oitentaPorCentoDaMediaSalarial = (mediaSalarial * 80) / 100;
+			System.out.println("Parabéns você bateu a meta e vai receber 100% de bônus! O valor será: " + mediaSalarial);
+		} else if (bateuOitentaPorCento) {
+			Double receberOitentaPorCento = (mediaSalarial * 80) / 100;
 			
-			System.out.println("Ganhará bônus de 80%! Ele será de: " + oitentaPorCentoDaMediaSalarial);
+			System.out.println("Parabéns, seu bônus será de 80%. O valor será: " + receberOitentaPorCento);
 		} else {
-			System.out.println("Infelizmente, esse ano não tem bônus!");
+			System.out.println("Infelzimente a meta não foi batida, você não receberá bônus.");
 		}
-		
-		scanner.close();
-	
 	}
 }
