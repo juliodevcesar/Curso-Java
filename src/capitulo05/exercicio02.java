@@ -24,7 +24,7 @@ public class exercicio02 {
 		if (metaBatida) {
 			System.out.println("Parabéns você bateu a meta e vai receber 100% de bônus! O valor será: " + mediaSalarial);
 		} else if (bateuSetentaPorCento) {
-			Double faturouSetentaPorCento = (mediaSalarial * 7100) / 100;
+			Double faturouSetentaPorCento = (mediaSalarial * 70) / 100;
 			
 			System.out.println("Parabéns, seu bônus será de 70%. O valor será: " + faturouSetentaPorCento);
 		} else {
