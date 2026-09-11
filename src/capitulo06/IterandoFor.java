@@ -39,18 +39,30 @@ public class IterandoFor {
 //		}
 		
 		
-		Integer[] produtos = new Integer[] {100, 225, 300};
+//		Integer[] produtos = new Integer[] {100, 225, 300};
+//		
+//		for(int i = 0; i < produtos.length; i++) {
+//			Integer produto = produtos[i];
+//			
+//			System.out.println("Produto de código: " + produto);
+//			
+//			if (produto.equals(225)) {
+//				System.out.println("Produto encontrado!");
+//				break;
+//				
+//			}
+//		}
 		
-		for(int i = 0; i < produtos.length; i++) {
-			Integer produto = produtos[i];
-			
-			System.out.println("Produto de código: " + produto);
-			
-			if (produto.equals(225)) {
-				System.out.println("Produto encontrado!");
-				break;
-				
-			}
+		int i = 0;
+		while (i < 10) {
+			if (i == 5) {
+			System.out.println("Vai continuar...");
+			i++;
+			continue;
+		}
+		
+			System.out.println(i + "texto");
+			i++;
 		}
 	}
 
