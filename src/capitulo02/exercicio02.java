@@ -7,19 +7,19 @@ public class exercicio02 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("CÁLCULO DO ÍNDICE DE MASSA CORPORAL");
+		System.out.println("CÁCULO DE ÍNDICE DE MASSA CORPORAL.");
 		
-		System.out.print("Digite seu peso (em Kg): ");
+		System.out.println("Digite seu peso em KG: ");
 		Double peso = scanner.nextDouble();
 		
-		System.out.print("Digite sua altura (em metros): ");
+		System.out.println("Digite sua altura em CM: ");
 		Double altura = scanner.nextDouble();
 		
-		Double alturaAoQuadrado = altura * altura;
+		Double alturaAoQuadrado = (altura * altura);
 		
-		Double indiceMassaCorporal = peso / alturaAoQuadrado;
+		Double IndiceDeMassaCorporal = peso / alturaAoQuadrado;
 		
-		System.out.println("Seu IMC é: " + indiceMassaCorporal);
+		System.out.println("Seu IMC é: " + IndiceDeMassaCorporal);
 		
 		scanner.close();
 	}

@@ -7,14 +7,14 @@ public class Exercicio04 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Digite o valor do produto: ");
-		Double valorProduto = scanner.nextDouble();
-			
-		System.out.println("Digite a quantidade que deseja: ");
-		Integer quantidadeProduto = scanner.nextInt();
+		Double valorProdutos = scanner.nextDouble();
 		
-		Double subtotalProdutos = valorProduto * quantidadeProduto;
+		System.out.println("Digite a quantidade: ");
+		Integer quantidadeDeProdutos = scanner.nextInt();
 		
-		Boolean quantidadeMaiorOuIgualDez = quantidadeProduto >= 10;
+		Double subtotalProdutos = valorProdutos * quantidadeDeProdutos;
+		
+		Boolean quantidadeMaiorOuIgualDez = quantidadeDeProdutos >= 10;
 		
 		Double percentualDesconto = 0.0;
 		

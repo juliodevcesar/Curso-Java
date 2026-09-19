@@ -10,15 +10,15 @@ public class Exercicio03 {
 	public static void main(String[] args) { // main padrão
 		Scanner scanner = new Scanner(System.in); // Função Scanner pra receber do console
 		
-		System.out.println("Digite sua nota: "); // printa pra digitar a nota
-		Double notaDoAluno = scanner.nextDouble(); // var do tipo numerico decimal tipo float
+		System.out.println("Digite sua nota: ");
+		Double nota = scanner.nextDouble();
 		
-		Boolean passouDeAno = notaDoAluno >= NOTA_MINIMA_PARA_PASSAR_DE_ANO; // variavel boleana, true or false, recebe a nota e faz a logica
+		Boolean passou = nota >= NOTA_MINIMA_PARA_PASSAR_DE_ANO;
 		
-		if (passouDeAno) { // passou de ano é a nota do acima ser acima ou igual a 70
-			System.out.println("Parabéns você passou de ano.");
+		if(passou) {
+			System.out.println("Você foi aprovado!");
 		} else {
-			System.out.println("Infelizmente, ficou de recuperação.");
+			System.out.println("Você reprovou!");
 		}
 		
 		scanner.close();
