@@ -7,30 +7,28 @@ public class Exercicio04 {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Digite o valor do produto: ");
-		Double valorProdutos = scanner.nextDouble();
+		Double valorProduto = scanner.nextDouble();
 		
 		System.out.println("Digite a quantidade: ");
-		Integer quantidadeDeProdutos = scanner.nextInt();
+		Double quantidade = scanner.nextDouble();
 		
-		Double subtotalProdutos = valorProdutos * quantidadeDeProdutos;
-		
-		Boolean quantidadeMaiorOuIgualDez = quantidadeDeProdutos >= 10;
+		Double subtotal = valorProduto * quantidade;
 		
 		Double percentualDesconto = 0.0;
 		
-		if (quantidadeMaiorOuIgualDez) {
+		Boolean quantidadeAcimaDeDez = quantidade > 10;
+		
+		if(quantidadeAcimaDeDez) {
 			percentualDesconto = 10.0;
 		}
 		
-		Double desconto = subtotalProdutos * percentualDesconto / 100;
+		Double desconto = subtotal * percentualDesconto / 100;
 		
-		Double valorTotalDesconto = subtotalProdutos - desconto;
+		Double valorComDesconto = subtotal - desconto;
 		
-		System.out.printf("Valor total: R$ %.2f%n", valorTotalDesconto);
+		System.out.println("Valor total: " + valorComDesconto);
 		
 		scanner.close();
-		
-		
-		
+
 	}
 }
