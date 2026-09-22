@@ -5,31 +5,34 @@ import java.util.Scanner;
 public class exercicio01 {
 
 	static final Double NOTA_MINIMA_PARA_PASSAR = 150.0;
-	static final Double NOTA_MINIMA_INDIVIDUAL = 60.0;
+	static final Double NOTA_MINIMA_POR_MATERIA = 60.0;
 	
 	public static void main(String[] args) {
 		
+		System.out.println("CALCULANDO NOTAS PARA APROVAÇÃO!");
+		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Digite a nota de Português: ");
+		System.out.println("Digite sua nota de Português: ");
 		Double notaPortugues = scanner.nextDouble();
 		
-		System.out.println("Digite a nota de Matemática: ");
+		System.out.println("Digite sua nota de Matemática: ");
 		Double notaMatematica = scanner.nextDouble();
 		
-		Boolean acimaDoMinimoPortugues= notaPortugues >= NOTA_MINIMA_INDIVIDUAL;
-		Boolean acimaDoMinimoMatematica= notaMatematica >= NOTA_MINIMA_INDIVIDUAL;
+		Double notaGeral = notaMatematica + notaPortugues;
 		
-		Double notaTotal = notaMatematica + notaPortugues;
+		Boolean notaMinimaPortugues = notaPortugues >= NOTA_MINIMA_POR_MATERIA;
 		
-		Boolean temNotaParaPassar = notaTotal >= NOTA_MINIMA_PARA_PASSAR;
+		Boolean notaMinimaMatematica = notaMatematica >= NOTA_MINIMA_POR_MATERIA;
 		
-		Boolean passou = temNotaParaPassar && acimaDoMinimoMatematica && acimaDoMinimoPortugues;
+		Boolean temNotaParaPassar = notaGeral >= NOTA_MINIMA_PARA_PASSAR;
 		
-		if (passou) {
-			System.out.println("Você foi aprovado!");
+		Boolean passou = temNotaParaPassar && notaMinimaMatematica && notaMinimaPortugues;
+		
+		if(passou) {
+			System.out.println("Parabéns, você foi aprovado!");
 		} else {
-			System.out.println("Você foi reprovado!");
+			System.out.println("Infelizmente você não foi aprovado!");
 		}
 		
 		scanner.close();
