@@ -8,7 +8,7 @@ public class CaixaEletronico {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		Double saldo = 1000.0;
+		Double saldo = 1050.0;
 		
 		
 		exibirMenu();
