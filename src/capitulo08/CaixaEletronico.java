@@ -43,7 +43,7 @@ public class CaixaEletronico {
 		}
 		
 		static void exibirMensagemSaida() {
-			System.out.println("Obrigado por utilizar nosso Caixa Eletrônico.");
+			System.out.println("Obrigado por utilizar nosso Caixa Eletrônico!");
 		}
 		
 		static void exibirSaldo(Double valor) {
