@@ -53,7 +53,7 @@ public class Exercicio03 {
 	}
 	
 	static Integer escolhaAOperacao(Scanner scanner) {
-		System.out.println("ESCOLHA A OPERAÇÃO!");
+		System.out.println("ESCOLHA A OPERAÇÃO");
 		
 		String[] operacoes = new String[] {"Subtração", "Adição"};
 		

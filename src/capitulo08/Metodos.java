@@ -59,6 +59,6 @@ public class Metodos {
 	}
 	
 	static void imprimirTraco() {
-		System.out.println("----------------------------------------------");
+		System.out.println("------------------------------------------------");
 	}
 }
